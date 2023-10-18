@@ -8,8 +8,8 @@ export const fetchCharacters = async (searchTerm, pageNumber) => {
     const response = await api.get('character', {
       params: {
         name: searchTerm,
-        page: pageNumber,
-      }
+        page: pageNumber, 
+      },
     });
     return response.data;
   } catch (error) {

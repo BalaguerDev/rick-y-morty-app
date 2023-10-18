@@ -15,26 +15,21 @@ const CharacterDetails = ({ character, statusIcon, speciesIcon, genderIcon }) =>
           &nbsp;{status}
         </span>
       </h2>
+      <p>
+        {species}&nbsp;
+        <FontAwesomeIcon icon={speciesIcon} />
+      </p>
+      <p>
+        {gender}&nbsp;
+        <FontAwesomeIcon icon={genderIcon} />
+      </p>
       <hr />
-      <div className="detailsCharactersText">
-        <p>ESPECIE:</p>
-        <p>
-          {species}&nbsp;
-          <FontAwesomeIcon icon={speciesIcon} />
-        </p>
-      </div>
-      <div className="detailsCharactersText">
-        <p>GENERO:</p>
-        <p>
-          {gender}&nbsp;
-          <FontAwesomeIcon icon={genderIcon} />
-        </p>
-      </div>
       {type && (
-        <div className="detailsCharactersText">
+        <div className="detailsLocationOrigin">
           <p>TIPO:</p>
           <p> {type}</p>
         </div>
+
       )}
       <div className="detailsLocationOrigin">
         <p>LOCALIZACIÓN:</p>
