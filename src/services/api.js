@@ -8,12 +8,11 @@ export const fetchCharacters = async (searchTerm, pageNumber) => {
     const response = await api.get('character', {
       params: {
         name: searchTerm,
-        page: pageNumber, 
+        page: pageNumber,
       }
     });
-    const { results } = response.data;
-    return results;
+    return response.data;
   } catch (error) {
-    throw new Error('Error al obtener personajes.'); 
+    throw new Error('Error al obtener personajes.');
   }
 };

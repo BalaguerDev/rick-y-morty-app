@@ -2,30 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { fetchCharacters } from './services/api';
 import CharacterList from './components/CharacterList/CharacterList';
 import Header from './components/Header/Header';
+import Pagination from './components/Pagination/Pagination';
 import './styles/globalStyles.css';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
+  const [totalPages, setTotalPages] = useState(1);
   const [error, setError] = useState(null);
 
-  const fetchData = async (pageNumber) => {
-    try {
-      const results = await fetchCharacters(searchTerm, pageNumber);
-      setCharacters(results);
-      setError(null);
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
-  useEffect(() => {
-    fetchData(page);
-  }, [searchTerm, page]); 
-
   const handleNextPage = () => {
-    setPage(page + 1);
+    if (page < totalPages) {
+      setPage(page + 1);
+    }
   };
 
   const handlePrevPage = () => {
@@ -34,14 +24,32 @@ const App = () => {
     }
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetchCharacters(searchTerm, page);
+        setCharacters(response.results);
+        setTotalPages(response.info.pages);
+        setError(null);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
+  }, [searchTerm, page]);
+
   return (
     <div className="App">
       <Header handleSearch={setSearchTerm} />
       {error ? <p>{error}</p> : <CharacterList characters={characters} />}
-      <button onClick={handlePrevPage} disabled={page === 1}>
-        Anterior
-      </button>
-      <button onClick={handleNextPage}>Siguiente</button>
+      <Pagination
+        page={page}
+        totalPages={totalPages}
+        handlePrevPage={handlePrevPage}
+        handleNextPage={handleNextPage}
+        setPage={setPage}
+      />
     </div>
   );
 };

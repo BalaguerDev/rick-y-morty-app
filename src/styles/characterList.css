@@ -1,7 +1,14 @@
 
 .character-list-container {
+  position: relative;
+  height: calc(100% - 120px);
   text-align: center;
-  padding: 20px;
+  padding: 20px 0 60px;
+}
+@media (min-width: 768px) {
+  .character-list-container {
+    padding: 20px 0 80px;
+  }
 }
 
 .character-item img {
@@ -48,6 +55,12 @@
   color: #adbb4e;
   top: 260px;
 }
+@media (min-width: 768px) {
+  .character-item .character-name {
+    top: 260px;
+  }
+}
+
 
 .character-item .character-details {
   position: absolute;

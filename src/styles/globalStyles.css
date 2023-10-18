@@ -4,7 +4,8 @@
     padding: 0
 }
 
-body {
+html {
     background: #0e373b;
     font-family: monospace;
+    height: calc(100% - 80px);
 }
