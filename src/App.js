@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { fetchCharacters } from './services/api';
-import CharacterList from './components/CharacterList/CharacterList'; 
 import Header from './components/Header/Header'; 
 import Pagination from './components/Pagination/Pagination'; 
 import './styles/globalStyles.css'; 
+import CharacterList from './components/Characters/CharacterList';
 
 const App = () => {
   const [characters, setCharacters] = useState([]); 
