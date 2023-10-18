@@ -3,6 +3,8 @@
     align-items: center;
     position: relative;
     width: 100%;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
 }
 
 input[type="text"] {
@@ -34,6 +36,8 @@ input::placeholder {
 @media (min-width: 768px) {
     .search-bar-container {
         width: 500px;
+        padding: 0;
+
     }
 
     input[type="text"] {
