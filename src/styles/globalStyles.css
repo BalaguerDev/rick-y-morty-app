@@ -1,0 +1,10 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #0e373b;
+    font-family: monospace;
+}
