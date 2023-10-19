@@ -18,6 +18,8 @@ input[type="text"] {
     background: #407772;
     color: #adbb4e;
     border-color: #adbb4e;
+    margin-top: 10px;
+
 }
 
 input::placeholder {
@@ -46,5 +48,6 @@ input::placeholder {
         border-radius: 50px;
         font-size: 1rem;
         width: 100%;
+        margin-left: 20px;
     }
 }

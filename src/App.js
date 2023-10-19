@@ -4,6 +4,10 @@ import Header from './components/Header/Header';
 import Pagination from './components/Pagination/Pagination';
 import './styles/globalStyles.css';
 import CharacterCards from './components/Characters/CharacterCards';
+import ErrorFoundSearchBar from './components/Error/ErrorFoundSearchBar';
+
+const errorGifUrl = 'https://giphy.com/embed/XeS1TdPIAI0FSBcwXn';
+
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -36,6 +40,7 @@ const App = () => {
       }
     } catch (error) {
       setError(error.message);
+      setCharacters([])
     }
   }, [searchTerm, page, cache]);
 
@@ -63,7 +68,14 @@ const App = () => {
   return (
     <div className="App">
       <Header handleSearch={handleSearch} />
-      {error ? <p>{error}</p> : <CharacterCards characters={characters} />}
+      {error ? (
+        <>
+          <h1>No lo se, Rick, parece falso </h1>
+          <ErrorFoundSearchBar message="No encontramos ningún personaje con ese nombre, prueba a modificar la búsqueda" gifUrl={errorGifUrl} />
+        </>
+      ) : (
+          <CharacterCards characters={characters} />
+      )}
       <Pagination
         page={page}
         totalPages={totalPages}
