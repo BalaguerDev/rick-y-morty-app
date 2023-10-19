@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Rick y Morty Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es una aplicación web desarrollada para mostrar información sobre los personajes de la serie "Rick y Morty". Los datos son obtenidos a través de la API pública de "Rick y Morty".
 
-## Available Scripts
+## Capturas de Pantalla
 
-In the project directory, you can run:
+![Texto Alternativo](https://res.cloudinary.com/drghk9p6q/image/upload/v1697726868/PersonalProjects/RickYMortyResponsive-removebg-preview_jirl5d.png)
 
-### `npm start`
+## Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Búsqueda de Personajes:** Permite a los usuarios buscar personajes por nombre.
+- **Paginación:** Permite a los usuarios navegar a través de diferentes páginas de resultados.
+- **Información Detallada:** Muestra detalles completos del personaje al hacer clic en él.
+- **Diseño Responsivo:** Funciona en dispositivos móviles y de escritorio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+- **React:** Biblioteca de JavaScript para construir interfaces de usuario.
+- **CSS:** Para el estilo y diseño de la aplicación.
+- **Axios:** Cliente HTTP para realizar solicitudes a la API.
+- **FontAwesome:** Para iconos utilizados en la aplicación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Captura de Pantalla
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clona este repositorio: `git clone URL_DEL_REPOSITORIO`
+2. Entra en el directorio del proyecto: `cd rick-y-morty-web-app`
+3. Instala las dependencias: `npm install`
 
-### `npm run eject`
+## Uso
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Inicia la aplicación: `npm start`
+2. Abre tu navegador y visita: `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cómo Contribuir
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Si quieres contribuir a este proyecto, por favor sigue estos pasos:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Haz un Fork del repositorio
+2. Crea una nueva rama: `git checkout -b nueva-funcionalidad`
+3. Realiza tus cambios y haz commit: `git commit -m 'Añade nueva funcionalidad'`
+4. Haz push a la rama: `git push origin nueva-funcionalidad`
+5. Abre un Pull Request en GitHub y describe tus cambios detalladamente
 
-## Learn More
+## Licencia
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+**Nota:** Reemplaza las secciones con información específica de tu proyecto. Puedes agregar más secciones según sea necesario, como "Contribuyentes", "Problemas Conocidos", "Hoja de Ruta" o cualquier otra información relevante para los usuarios y desarrolladores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Espero que esta estructura te ayude a crear un README claro y completo para tu proyecto. ¡Buena suerte!
