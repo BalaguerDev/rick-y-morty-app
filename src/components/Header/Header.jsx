@@ -30,7 +30,7 @@ const Header = ({ handleSearch }) => {
       <img
         src={Logo}
         alt="Logo Rick y Morty"
-        className={isShrunk ? 'shrunk' : ''} // Agrega una clase cuando la imagen se ha encogido
+        className={isShrunk ? 'shrunk' : ''}
       />
       <SearchBar handleSearch={handleSearch} className="searchBar" />
     </div>

@@ -6,8 +6,31 @@
 
 html {
     background: #0e373b;
+    background-image: url('../assets/img/thumb-1920-1330376.png');
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: monospace;
-    height: calc(100% - 80px);
+}
+
+@media (min-width: 768px) {
+  html {
+    background-position-x: 0;
+  }
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #0e373b url(http://localhost:3000/static/media/thumb-1920-1330376.b7c156b….png) no-repeat fixed center;
+  background-size: cover;
+  opacity: 0.9; 
+  z-index: -1; 
 }
 
 .error-container {
