@@ -3,7 +3,7 @@ import { fetchCharacters } from './services/api';
 import Header from './components/Header/Header';
 import Pagination from './components/Pagination/Pagination';
 import './styles/globalStyles.css';
-import CharacterList from './components/Characters/CharacterList';
+import CharacterCards from './components/Characters/CharacterCards';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -63,7 +63,7 @@ const App = () => {
   return (
     <div className="App">
       <Header handleSearch={handleSearch} />
-      {error ? <p>{error}</p> : <CharacterList characters={characters} />}
+      {error ? <p>{error}</p> : <CharacterCards characters={characters} />}
       <Pagination
         page={page}
         totalPages={totalPages}
