@@ -20,9 +20,6 @@ Esta es una aplicación web desarrollada para mostrar información sobre los per
 - **Axios:** Cliente HTTP para realizar solicitudes a la API.
 - **FontAwesome:** Para iconos utilizados en la aplicación.
 
-## Captura de Pantalla
-
-
 
 ## Instalación
 
@@ -44,13 +41,3 @@ Si quieres contribuir a este proyecto, por favor sigue estos pasos:
 3. Realiza tus cambios y haz commit: `git commit -m 'Añade nueva funcionalidad'`
 4. Haz push a la rama: `git push origin nueva-funcionalidad`
 5. Abre un Pull Request en GitHub y describe tus cambios detalladamente
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
-**Nota:** Reemplaza las secciones con información específica de tu proyecto. Puedes agregar más secciones según sea necesario, como "Contribuyentes", "Problemas Conocidos", "Hoja de Ruta" o cualquier otra información relevante para los usuarios y desarrolladores.
-
-Espero que esta estructura te ayude a crear un README claro y completo para tu proyecto. ¡Buena suerte!
