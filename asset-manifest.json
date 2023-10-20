@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BalaguerDev/rick-y-morty-app.git/static/css/main.8252e773.css",
+    "main.js": "/BalaguerDev/rick-y-morty-app.git/static/js/main.a44d2a2e.js",
+    "static/media/thumb-1920-1330376.png": "/BalaguerDev/rick-y-morty-app.git/static/media/thumb-1920-1330376.b7c156b601422f982c07.png",
+    "static/media/Rick_and_Morty.svg.png": "/BalaguerDev/rick-y-morty-app.git/static/media/Rick_and_Morty.svg.360c08e6e65e2f5b10f9.png",
+    "index.html": "/BalaguerDev/rick-y-morty-app.git/index.html",
+    "main.8252e773.css.map": "/BalaguerDev/rick-y-morty-app.git/static/css/main.8252e773.css.map",
+    "main.a44d2a2e.js.map": "/BalaguerDev/rick-y-morty-app.git/static/js/main.a44d2a2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8252e773.css",
+    "static/js/main.a44d2a2e.js"
+  ]
+}
