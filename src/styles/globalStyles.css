@@ -27,7 +27,7 @@ html::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #0e373b url(http://localhost:3000/static/media/thumb-1920-1330376.b7c156b….png) no-repeat fixed center;
+  background: #0e373bca url(http://localhost:3000/static/media/thumb-1920-1330376.b7c156b….png) no-repeat fixed center;
   background-size: cover;
   opacity: 0.9; 
   z-index: -1; 
