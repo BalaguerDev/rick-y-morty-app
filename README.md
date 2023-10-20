@@ -23,7 +23,7 @@ Esta es una aplicación web desarrollada para mostrar información sobre los per
 
 ## Instalación
 
-1. Clona este repositorio: `git clone URL_DEL_REPOSITORIO`
+1. Clona este repositorio: `git clone https://github.com/BalaguerDev/rick-y-morty-app.git`
 2. Entra en el directorio del proyecto: `cd rick-y-morty-web-app`
 3. Instala las dependencias: `npm install`
 
@@ -34,10 +34,12 @@ Esta es una aplicación web desarrollada para mostrar información sobre los per
 
 ## Cómo Contribuir
 
-Si quieres contribuir a este proyecto, por favor sigue estos pasos:
+Me encantaría recibir tu ayuda para mejorar esta aplicación! Si deseas contribuir, sigue estos pasos:
 
 1. Haz un Fork del repositorio
 2. Crea una nueva rama: `git checkout -b nueva-funcionalidad`
 3. Realiza tus cambios y haz commit: `git commit -m 'Añade nueva funcionalidad'`
 4. Haz push a la rama: `git push origin nueva-funcionalidad`
 5. Abre un Pull Request en GitHub y describe tus cambios detalladamente
+
+¡Gracias por tu contribución! 👏

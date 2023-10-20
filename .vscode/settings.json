@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "Estilos de tarjetas de personajes y nueva estructura"
+        "Estilos de tarjetas de personajes y nueva estructura",
+        "Nuevo Readme"
     ]
 }
